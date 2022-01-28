@@ -3,7 +3,7 @@ bool xDir (const Vec3& up_vec) { return (up_vec.x ? 1 : 0); }
 bool yDir (const Vec3& up_vec) { return (up_vec.y ? 1 : 0); }
 bool zDir (const Vec3& up_vec) { return (up_vec.z ? 1 : 0); }
 
-TrajectoryResult PredictTrajectory( const Vec3& start_position, const Vec3& start_velocity, const Vec3& up_vector, float gravity_accel, float raycast_time_step, float max_time )
+TrajectorySimulation ProjectileTrajectory( const Vec3& start_position, const Vec3& start_velocity, const Vec3& up_vector, float gravity_accel, float raycast_time_step, float max_time )
 {
     //constants
     
